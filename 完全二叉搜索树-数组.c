@@ -12,7 +12,7 @@ int main()
 	int* data;
 	int* root;
 
-	scanf("%d", &num);
+	scanf_s("%d", &num);
 	data = (int*)malloc(sizeof(int) * num);
 	root = (int*)malloc(sizeof(int) * num);
 	ReadData(data, num);
@@ -28,7 +28,7 @@ void ReadData(int* data, int num)
 {
 	int i = 0;
 	for (i = 0; i < num; i++) {
-		scanf("%d", &data[i]);
+		scanf_s("%d", &data[i]);
 	}
 	qsort(data, num, sizeof(int), compare);
 }
